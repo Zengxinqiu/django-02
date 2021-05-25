@@ -19,3 +19,11 @@ print(list1)
 
 list2 = ['aghdd', 'bc', 'ghli', 'def', 'ab']
 list2.sort()
+# print(list2)
+# 需求：根据列表中字符串的长度，列表进行排序
+# list2.sort(key=len)
+list2.sort(key=lambda x: len(x))
+print(list2)
+
+
+s
