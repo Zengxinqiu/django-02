@@ -26,4 +26,9 @@ list2.sort(key=lambda x: len(x))
 print(list2)
 
 
-s
+# sort(key= lambda 形参：（排序规制1， 排序规制2，.....）)
+# 当第一个规则相同，会按照第二个规制排序
+
+list1.sort(key=lambda x: (x['age'], x['name']))
+list1.sort(key=lambda x: (x['age'], x['name']), reverse=True)
+print(list1)
